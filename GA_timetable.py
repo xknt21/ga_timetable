@@ -55,7 +55,7 @@ def calc_day_ave(lists):  #1つの時間割の評価値を求める（曜日ご�
     sum.append(round(m,2))
     m=0
     if any(lists[TABLE_ROW*i:TABLE_ROW*(i+1)].count(t)>1 for t in lists[TABLE_ROW*i:TABLE_ROW*(i+1)]):    #もし一つの曜日に同じ教科が複数あるなら
-       sum[i] += PENALTY_NUMBER    #その曜日の合計重量に10足すことで淘汰されるようにする
+       sum[i] += PENALTY_NUMBER    #その曜日の合計重量に100足すことで淘汰されるようにする
     
 
   
